@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Fixed Navbar</title>
+  <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="Screenshot_2024-09-16_024123-removebg-preview.png" alt="Logo">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="po">
+    
+  </div>
+  <div class="product-grid">
+    <!-- 12 Product Cards Example -->
+    <div class="product-card">
+        <img src="p21.jpg" alt="Product 1">
+        <h3>Watch A</h3>
+        <h4>Rs 10000</h4>
+        <p>Rs 11500</p>
+        <button class="add-to-cart" onclick="openForm('Watch A')">Add to Cart</button>
+    </div>
+    <!-- Add the remaining 11 cards here similarly -->
+</div>
+
+<!-- Order Form Modal -->
+<div class="order-form-modal" id="orderForm">
+    <div class="order-form-content">
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+        <h2>Order Form</h2>
+        <form id="orderFormDetails">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="product">Product</label>
+            <input type="text" id="product" name="product" readonly>
+
+            <button type="submit">Confirm Order</button>
+        </form>
+    </div>
+</div>
+
+
+  <script src="st.js"></script>
+
+
+</body>
+</html>
